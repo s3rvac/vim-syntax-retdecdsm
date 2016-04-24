@@ -1,0 +1,49 @@
+; Comments:
+; ----------------------------------------------------------------------------
+
+;;
+;; Code Segment
+;  function: _init at 0x839c -- 0x83bb
+
+; Address, bytes, and instructions:
+; ----------------------------------------------------------------------------
+
+; x86
+0x804834c:   00 00                 	add byte [ eax ], al
+0x804831b:   8b 83 fc ff ff ff     	mov eax, dword [ ebx + 0xfffffffffffffffc ]
+0x8048310:   e8 ab 00 00 00        	call 0x80483c0  <__x86.get_pc_thunk.bx>
+0x8048334:   83 c4 08              	add esp, 0x8
+0x80489fa:   0f 43 fd              	cmov nc  edi, ebp
+0x8048c3a:   0f 94 44 24 2f        	set z  byte [ esp  + 0x2f ]
+0x8048337:   5b                    	pop ebx
+0x8048338:   c3                    	ret
+; rep instruction
+0x80483df:   f3 c3                 	rep ret
+
+; ARM
+0x839c:   e9 2d 40 08  	stm  db sp! , 0x4008
+0x83a4:   e8 bd 80 08  	ldm  ia sp! , 0x8008
+0xa76c:   00 00 a7 cc  	and eq  sl, r0, ip, asr #0xf
+0x84b4:   e1 b0 10 c3  	mov  s r1, r3, asr #0x1
+0x84e4:   e5 d4 30 00  	ldr  b r3, [ r4, # + 0x0 ]
+0x8404:   e3 a0 b0 00  	mov   fp, #0x0, 0x0
+0x8030:   18 bd 80 f0  	ldm ne ia sp! , 0x80f0
+0x81cc:   85 22 50 04  	str hi  r5, [ r2, # - 0x4 ] !
+
+; MIPS/PIC32
+0x9d00028c:   a0 00 00 0c  	sb $zero, 0xc ( $zero )
+0x9d000294:   00 00 00 01  	movf $zero, $zero, 0
+0x9d000290:   00 00 00 a0
+
+; PowerPC
+0x100002c0:   93 c1 00 08  	stw r30, 0x8 ( r1 )
+0x100002e0:   48 00 02 c1  	bl 0x100005a0  <function_100005a0>
+
+; Address, bytes, ASCII representations, and strings:
+; ----------------------------------------------------------------------------
+
+0x8049720:   13 00 00 00 08 00 00 00  fe ff ff 6f cc 82 04 08   |...........o....|
+0x8049788:   76 83 04 08                                        |v...            |
+0x14884:   25 30 32 78 00 00                                  |%02x..          |  "%02x\x00"
+0x83bd:   c6 8f e2 08 ca 8c e2 84  f3 bc e5                  |...........     |
+0x83bd:   c6 8f e2 08 ca 8c e2 84  f3 bc e5                  |...........     |
