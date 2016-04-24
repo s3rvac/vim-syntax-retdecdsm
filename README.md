@@ -4,6 +4,8 @@ RetDec Disassembly Syntax For Vim
 A Vim syntax-highlighting file for the output from the
 [RetDec](https://retdec.com/)'s disassembler.
 
+![Screenshot](screenshot.png "Syntax highlighting in action.")
+
 [RetDec](https://retdec.com/) is a retargetable machine-code decompiler with an
 [online decompilation service](https://retdec.com/decompilation/). One of its
 outputs is a disassembled version of the input binary file. This Vim plugin
