@@ -21,7 +21,7 @@ cd ~/.vim/bundle
 git clone https://github.com/s3rvac/vim-syntax-retdecdsm.git
 ```
 You can also install the plugin manually by copying the
-[`syntax/retdecdsm.vim`](https://raw.githubusercontent.com/s3rvac/vim-syntax-retdecdsm/blob/master/syntax/retdecdsm.vim)
+[`syntax/retdecdsm.vim`](https://raw.githubusercontent.com/s3rvac/vim-syntax-retdecdsm/master/syntax/retdecdsm.vim)
 file to your `~/.vim/syntax` directory. If that directory does not exist,
 create it.
 
