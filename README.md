@@ -34,7 +34,7 @@ the following autocommand to your `.vimrc`:
 ```
 " Consider *.dsm files as files containing disassembly from the retdec.com
 " decompilation service.
-au BufNewFile,BufRead *.dsm set ft=retdecdsm
+autocmd BufNewFile,BufRead *.dsm set filetype=retdecdsm
 ```
 
 License
