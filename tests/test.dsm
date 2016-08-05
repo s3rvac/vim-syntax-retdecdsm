@@ -34,6 +34,8 @@
 0x9d00028c:   a0 00 00 0c  	sb $zero, 0xc ( $zero )
 0x9d000294:   00 00 00 01  	movf $zero, $zero, 0
 0x9d000290:   00 00 00 a0
+; Target inside instruction
+0x890005c:   10 40 00 05   	beq 0x8900074  <_start+0x38>, $zero, 0x8900074  <_start+0x38>
 
 ; PowerPC
 0x100002c0:   93 c1 00 08  	stw r30, 0x8 ( r1 )

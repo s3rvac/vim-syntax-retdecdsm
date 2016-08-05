@@ -3,7 +3,7 @@
 " Language:     retdec.com disassembly
 " Maintainer:   Petr Zemek <s3rvac@gmail.com>
 " Home Page:    https://github.com/s3rvac/vim-syntax-retdecdsm
-" Last Change:  2016-04-24 14:56:19 +0200
+" Last Change:  2016-08-05 08:51:04 +0200
 "
 " The MIT License (MIT)
 "
@@ -37,7 +37,7 @@ syn case match
 syn match retdecdsmComment ";.*"
 syn match retdecdsmASCIIRepr "|.\+|"
 syn match retdecdsmString "\".*\""
-syn match retdecdsmTarget "<.\+>"
+syn match retdecdsmTarget "<[^>]\+>"
 " Other identifier-like words that are not covered by later rules (e.g. db, ia,
 " eq on ARM).
 syn match retdecdsmOtherId "\<[a-z]\+\>"
