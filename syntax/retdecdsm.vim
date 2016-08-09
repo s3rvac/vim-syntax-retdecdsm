@@ -3,7 +3,7 @@
 " Language:     retdec.com disassembly
 " Maintainer:   Petr Zemek <s3rvac@gmail.com>
 " Home Page:    https://github.com/s3rvac/vim-syntax-retdecdsm
-" Last Change:  2016-08-05 08:51:04 +0200
+" Last Change:  2016-08-09 15:08:44 +0200
 "
 " The MIT License (MIT)
 "
@@ -51,15 +51,13 @@ syn match retdecdsmRegister "\<r[0-9]\{1,2\}\>"
 syn match retdecdsmRegister "\<sp\>"
 syn match retdecdsmRegister "\<lr\>"
 syn match retdecdsmRegister "\<pc\>"
-syn match retdecdsmRegister "\<cpsr\>"
-syn match retdecdsmRegister "\<spsr\>"
+syn match retdecdsmRegister "\<[cs]psr\>"
 " Registers on MIPS/PIC32.
 syn match retdecdsmRegister "$[a-z0-9]\+\>"
 " Registers on x86.
 syn match retdecdsmRegister "\<e[abcd]x\>"
 syn match retdecdsmRegister "\<e\?[bs]p\>"
-syn match retdecdsmRegister "\<e\?si\>"
-syn match retdecdsmRegister "\<e\?di\>"
+syn match retdecdsmRegister "\<e\?[ds]i\>"
 syn match retdecdsmRegister "\<e[adpt]f\>"
 syn match retdecdsmRegister "\<[abcd][hlx]\>"
 syn match retdecdsmRegister "\<[bs]pl\>"
