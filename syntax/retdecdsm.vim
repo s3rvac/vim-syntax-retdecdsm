@@ -3,7 +3,7 @@
 " Language:     retdec.com disassembly
 " Maintainer:   Petr Zemek <s3rvac@gmail.com>
 " Home Page:    https://github.com/s3rvac/vim-syntax-retdecdsm
-" Last Change:  2016-08-09 15:08:44 +0200
+" Last Change:  2016-09-07 17:50:29 +0200
 "
 " The MIT License (MIT)
 "
@@ -36,7 +36,8 @@ syn case match
 
 syn match retdecdsmComment ";.*"
 syn match retdecdsmASCIIRepr "|.\+|"
-syn match retdecdsmString "\".*\""
+" The leading 'L' denotes a wide string (just like in C).
+syn match retdecdsmString "L\?\".*\""
 syn match retdecdsmTarget "<[^>]\+>"
 " Other identifier-like words that are not covered by later rules (e.g. db, ia,
 " eq on ARM).
