@@ -6,9 +6,8 @@ A Vim syntax-highlighting file for the output from the
 
 ![Screenshot](screenshot.png "Syntax highlighting in action.")
 
-[RetDec](https://retdec.com/) is a retargetable machine-code decompiler with an
-[online decompilation service](https://retdec.com/decompilation/). One of its
-outputs is a disassembled version of the input binary file. This Vim plugin
+[RetDec](https://retdec.com/) is an open-source machine-code decompiler. One of
+its outputs is a disassembled version of the input binary file. This Vim plugin
 adds syntax highlighting when viewing these disassemblies.
 
 Installation
@@ -32,8 +31,7 @@ When you open a [RetDec](https://retdec.com/)'s disassembly in Vim, execute
 `:set ft=retdecdsm` to enable syntax highlighting. Alternatively, you can put
 the following autocommand to your `.vimrc`:
 ```
-" Consider *.dsm files as files containing disassembly from the retdec.com
-" decompilation service.
+" Consider *.dsm files as files containing disassembly from RetDec.
 autocmd BufNewFile,BufRead *.dsm set filetype=retdecdsm
 ```
 
