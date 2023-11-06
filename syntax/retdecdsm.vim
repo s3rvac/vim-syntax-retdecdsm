@@ -1,13 +1,13 @@
 " Vim syntax file for retdec.com disassembly.
 "
 " Language:     retdec.com disassembly
-" Maintainer:   Petr Zemek <s3rvac@gmail.com>
+" Maintainer:   Petr Zemek <s3rvac@petrzemek.net>
 " Home Page:    https://github.com/s3rvac/vim-syntax-retdecdsm
 " Last Change:  2017-10-21 16:12:37 +0200
 "
 " The MIT License (MIT)
 "
-" Copyright (c) 2016 Petr Zemek <s3rvac@gmail.com> and contributors.
+" Copyright (c) 2016 Petr Zemek <s3rvac@petrzemek.net> and contributors.
 "
 " Permission is hereby granted, free of charge, to any person obtaining a copy
 " of this software and associated documentation files (the "Software"), to deal
